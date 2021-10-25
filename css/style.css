@@ -1,0 +1,124 @@
+html {
+    --content-color: hsla(274, 41%, 52%, 1);
+    --bg-dark:  hsla(0, 0%, 6%, 1);
+    --bg: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    background-color: var(--bg);
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue';
+}
+
+p {
+   font-family: 'Montserrat';
+}
+
+i {
+    font-size: 25px;
+    letter-spacing: 0.5rem;
+}
+
+a {
+    color: var(--color);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: var(--content-color);
+
+    width: 800px;
+    height: 444px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.img {
+    position: absolute;
+    width: 250px;
+    top: 66.9px;
+    border-radius: 15px 0 0 15px;
+}
+
+.text {
+    width: 60%;
+    right: 100px;
+    color: var(--bg);
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.5;
+
+    letter-spacing: 0.2rem;
+}
+
+.text1 {
+    padding-right: 60px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    line-height: 21px;
+}
+.broken{
+    font-family: 'Montserrat';
+    font-size: 14px;
+
+}
+
+.title2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    letter-spacing: 0.2rem;
+}
+
+.toggle-dark-mode {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    -webkit-appearance: none;
+    background-color: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    
+}
+
+.toggle-dark-mode:checked {
+    background: rgb(29, 206, 105);
+}
+
+.toggle-dark-mode:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: seashell;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.toggle-dark-mode:checked::before {
+    left: 40px;
+}
